@@ -1,0 +1,24 @@
+// 폰트 스타일
+
+@mixin font-style($size, $weight, $line-height) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $line-height;
+  letter-spacing: -0.01rem;
+}
+
+// 미디어 쿼리
+
+@mixin desktop {
+  @media (min-width: 1248px) {
+    @content;
+  }
+}
+
+@mixin talbet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
